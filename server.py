@@ -16,7 +16,7 @@ while True:
 #Recebe os dados enviados pelo cliente
     data = conn.recv(4096)
     msg = data.decode()
-    #print(f'Recebido: {data.decode()}')
+    print(f'Recebido: {data.decode()}')
 
     msg = input(': ')
     conn.send(msg.encode())
