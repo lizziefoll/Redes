@@ -2,10 +2,13 @@ perl -e 'print crypt("BSLG03", "IF"), "\n"'
 gerar senha
 ssh -p 2222 follador@192.168.246.60
 conectar no servidor 
+
 docker run --rm -d --name ssh -p 2222:22 darlon/ssh
 docker pull darlon/ssh
 docker run --rm -d --name ssh -p 2222:22 darlon/ssh
 ssh -p 2222 follador@192.168.246.58 //endereço IP
 
+scp -P 2222 follador@192.168.246.250:/tmp/everest.jpg . //cliente que recebe os arquivos
+scp -P 2222 nomefoto.png follador@192.168.246.52:/tmp/
  
 senha: BSLG03 
