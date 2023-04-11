@@ -1,0 +1,27 @@
+Máquina A:
+docker pull darlon/ssh
+
+docker run --rm -d --name ssh -p 2222:22 darlon/ssh
+
+scp -P 2222 pao.jpg CarlaS2@192.168.246.40:/tmp (coloca o pao no server carla@ip na pasta tpm)
+
+scp -P 2222 CarlaS2@192.168.246.40:/tmp/pao.jpg . (Copia o arquivo do server pro pc)
+
+ssh -p 2222 CarlaS2@192.168.246.40 (entra no server carla)
+
+ls /tmp (ve oq tem na pasta tmp)
+
+scp -P 2222 /tmp/pao.jpg CarlaS2@192.168.246.39:/tmp (IP DO PC B, @DO PC A )
+
+scp -P 2222 /tmp/pao.jpg CarlaS2@192.168.246.41:/tmp
+
+------------------------------------------------------------------------------------------------------
+
+Máquina B:
+docker pull darlon/ssh
+
+docker run --rm -d --name ssh -p 2222:22 darlon/ssh
+
+ssh -p 2222 CarlaS2@192.168.246.40 (IP E @ DO PC B)
+
+scp -P 2222 /tmp/pao.jpg CarlaS2@192.168.246.41:/tmp (IP E @ PC B)
