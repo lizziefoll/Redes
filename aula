@@ -17,7 +17,8 @@ scp -P 2222 nomefoto.png follador@192.168.246.52:/tmp/
 Possiveis perguntas da prova: 
 
 porta padrao do http: 80
-porta padrao do http: 443
+porta padrao do https: 443
+porta padrao ssh: 22
 ping: indica o tempo necessário para que uma pequena quantidade de dados faça uma ida e volta entre seu computador e o servidor de teste de velocidade. 
 https://theboroer.github.io/localtunnel-www/ //ve isso ai guria, pra estudar pra prova
 
