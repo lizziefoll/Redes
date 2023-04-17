@@ -1,0 +1,5 @@
+npm install -g localtunnel
+pesquisar serveo.net e copiar esse link de baixo
+ssh -R 80:localhost:3000 serveo.net
+mudar o nome da rede
+ssh -R serverdabeth:80:localhost:8085 serveo.net
