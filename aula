@@ -10,5 +10,8 @@ ssh -p 2222 follador@192.168.246.58 //endereço IP
 
 scp -P 2222 follador@192.168.246.250:/tmp/everest.jpg . //cliente que recebe os arquivos
 scp -P 2222 nomefoto.png follador@192.168.246.52:/tmp/
- 
+
+porta padrao do http: 80
+porta padrao do http: 443
+
 senha: BSLG03 
