@@ -1,0 +1,14 @@
+Classes do IP
+
+
+A primeiro bit = 0 -> valor entre 0 e 127 -> primeiro octeto -> (2*24=16.777.216maq)24 bits de endereço maquina
+|-> 2*8 =128 redes
+
+B dois primeiros bits= 10 -> valor entre 128 e 191 -> dois primeiros octetos -> (2*16= 65.526maq) 16 bits de endereço de máquina
+|-> 2*14=8.192 redes 
+
+C tres primeiros bits = 110 -> valor entre 192 e 223 -> tres primeiros octetos -> 8 bits de endereço de máquina 
+|-> 2*21 = 2.097.152 redes
+
+D quatro primeiros bits = 1110 -> valor entre 224 e 
+E quatro uns = 1111
