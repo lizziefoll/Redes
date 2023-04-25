@@ -12,3 +12,9 @@ C tres primeiros bits = 110 -> valor entre 192 e 223 -> tres primeiros octetos -
 
 D quatro primeiros bits = 1110 
 E quatro uns = 1111
+
+-> máscara de rede -> diferenciar o nome da rede das máquinas, qts bits pode ter
+-> endereços reservados: IP de final 0. EX: 192.168.246.0 -> endereço de rede 
+Final 255. EX: 192.168.246.255 -> endereço de broadcast 
+
+-> ver binários no terminal -> bv <<< 'obase=2; numero'
