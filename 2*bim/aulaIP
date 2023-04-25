@@ -10,5 +10,5 @@ B dois primeiros bits= 10 -> valor entre 128 e 191 -> dois primeiros octetos -> 
 C tres primeiros bits = 110 -> valor entre 192 e 223 -> tres primeiros octetos -> 8 bits de endereço de máquina 
 |-> 2*21 = 2.097.152 redes
 
-D quatro primeiros bits = 1110 -> valor entre 224 e 
+D quatro primeiros bits = 1110 
 E quatro uns = 1111
