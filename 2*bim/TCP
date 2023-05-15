@@ -1,0 +1,18 @@
+TCP: 
+TCP -> congestionamento -> se não receber a mensagem, ele manda denovo e garante a entrega da informação 
+janela deslizante = quantidade de pacotes, e ele(emissor) manda td de uma vez, (receptor) confirma que recebeu -> fala o ultimo que recebeu 
+|-> o tamanho da janela pode aumenntar -> sse mandou 10 e recebeu 10, ele tenta aumentar para 20 e assim sucessivamente
+|-> para mandar o proximo, o emissor precisa da confirmação de que o receptor recebeu
+3-way hand/shake (?)
+
+ack = confirmo que recebi a informação 
+syn (envia)-> 
+syn, ack (devolve q aceita a conexao)<- 
+ack -> ack -> ack -> (troca de infonrações)
+psh (push)(manda os pacotes mas não encerra a conexão) 
+
+x= recebeu
+0 = proxima janela que vai abrir para enviar
+1 = arquivos da janela que não conseguiram ser enviados
+xxxx, 0000
+x111, 1110
