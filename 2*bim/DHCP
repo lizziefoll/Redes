@@ -1,0 +1,21 @@
+IP estático: nao muda e é configurado um a um
+IP dinamico: muda 
+
+Dynamic Host Control Protocol 
+Cliente/Servidor
+
+Quando uma máquina é ligada e ainda não tem um IP, como ele sabe o IP do servidor? 
+-> enderfeço IP especial 
+0.0.0.0 -> sem IP 
+255.255.255.255 -> se mandar pra esse endereço, todas as máquinas recebem o pacote. Endereço geral. 
+Os dois endereços não são roteáveis. 
+Os servidores respondem o pacote só com o endereço MAC. 
+Se todas as maquinas recebem, é um IP de broadcast. 
+
+C-> discover -> S
+C <- offer <- S
+C -> Request -> S
+C <- ACK <- S
+
+Dscover e request dão pra ver de qualquer pc(wireshark), o offer e o ack são visíveis só pela máquina que ligou. 
+Para que um IP não fique armazenado na máquina para sempre, é colocado um tempo na rede para ele ser retirado. 
