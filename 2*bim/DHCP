@@ -1,3 +1,4 @@
+22/05
 IP estático: nao muda e é configurado um a um
 IP dinamico: muda 
 
@@ -5,9 +6,9 @@ Dynamic Host Control Protocol
 Cliente/Servidor
 
 Quando uma máquina é ligada e ainda não tem um IP, como ele sabe o IP do servidor? 
--> enderfeço IP especial 
+-> endereço IP especial 
 0.0.0.0 -> sem IP 
-255.255.255.255 -> se mandar pra esse endereço, todas as máquinas recebem o pacote. Endereço geral. 
+255.255.255.255 -> se mandar pra esse endereço, todas as máquinas recebem o pacote. Endereço de broadcast geral.  
 Os dois endereços não são roteáveis. 
 Os servidores respondem o pacote só com o endereço MAC. 
 Se todas as maquinas recebem, é um IP de broadcast. 
@@ -17,5 +18,30 @@ C <- offer <- S
 C -> Request -> S
 C <- ACK <- S
 
-Dscover e request dão pra ver de qualquer pc(wireshark), o offer e o ack são visíveis só pela máquina que ligou. 
+Discover e request dão pra ver de qualquer pc(wireshark), o offer e o ack são visíveis só pela máquina que ligou. 
 Para que um IP não fique armazenado na máquina para sempre, é colocado um tempo na rede para ele ser retirado. 
+
+Gatway padrão: Normalmente expresso como uma variação do mesmo endereço listado para o endereço IPv4. Na verdade,
+o endereço IPv4 geralmente é atribuído automaticamente pelo roteador (modo DHCP) e, portanto, geralmente é um 
+derivativo do endereço do roteador.
+
+23/05 
+/ alguma coisa -> quantidade de bits reservado para a rede
+Alguns IPs nao podem ser usados na internet -> endereços especiais  
+10.0.0.0/8 -> não roteável
+172.16.0.0/12
+192.168.0.0/24 -> não roteável
+0.0.0.0 -> sem IP e não roteável 
+169.254.0.0/16 -> APIPA -> endereço de IP privado automatico. 
+|-> os dois primeiros octetos ficam fixos, e a máquina escolhe (auto-atribui) os outros dois endereços. 
+
+Cada pocote quando sai ele seta um TTL(time to live), que vai caminhando entre roteadores até ele zerar (32,31,30,29...) quando 
+zerado ou ele nn envia ou sla
+
+ICMP = O Protocolo de mensagens de controle da Internet (ICMP) é usado para relatar erros e realizar diagnósticos de rede. No processo de
+relatório de erros, o ICMP envia mensagens do destinatário para o remetente quando os dados não chegam como deveriam.
+Echo request - echo reply
+
+traceroute -I -n +(endereço ip ou site da internet): Esse comando é usado quando se deseja identificar a rota percorrida por um pacote de dados
+pela rede até a chegada em seu destino.
+route -n: Tabela de Roteamento IP do Kernel.  
