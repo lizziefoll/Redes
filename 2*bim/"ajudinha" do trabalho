@@ -1,0 +1,32 @@
+def func_x():
+    for x in [5,4,3,2,1]:
+        #return x
+        yield x 
+        print(x)
+
+for i in func_x():
+    print(i)
+    print('---')
+
+def gera_ip_subrede(end_ip, mask):
+    end_ip = '192.168.246.16', 24
+    pref = '192.168.246'
+    ini = 1
+    end = 254
+
+    for ip in range(ini,end+1):
+        end = f'{pref}.{i}'
+        #print(ip)
+        yield ip
+
+#gera_ip_subrede('','')
+
+for ip in gera_ip_subrede('', ''):
+    print(ip)
+    
+---------------------------------------------
+
+for ip in gera_ip_subrede('10.1.2.4', 24):
+    print(ip)
+    
+
