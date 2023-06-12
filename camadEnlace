@@ -1,0 +1,9 @@
+equipamentos: switch(entrada para varios cabos)(armazena o endereço mac de cada um que ta conectado) 
+|-> ñ sabe o que é um endereço
+equipamento ñ usa mais: hub(ponto de encontro onde todos passam por la) (quando chega um impulso elétrico, ele reenvia esse impulso para todos os cabos)
+|-> rede muito lenta, e grande exposição de dados
+endereço: *MAC*
+protocolo de camada de enlace: ethernet 
+o que divide a camada de rede para a fisica 
+protocolo Spanning Tree: desabilita portas para previnir o looping de dados entre os switchs
+conversão de endereço IP para MAC: protocolo ARP 
